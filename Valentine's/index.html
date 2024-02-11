@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>San Valentín</title>
+    <link rel="icon" href="me-gusta.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div id="animated-bg"></div>
+        <div class="card">
+            <h1 id="msj">¡Feliz día de San Valentín!</h1>
+            <button onclick="mostrarPregunta()">Haz clic aquí</button>
+        </div>
+    </div>
+
+
+    <script>
+        function mostrarPregunta() {
+            var msj = document.getElementById("msj");
+            msj.style.animation = "fadeIn 3s";
+            msj.innerHTML = "¿Quieres ser mi Valentine?"
+        }
+    </script>
+</body>
+
+</html>
